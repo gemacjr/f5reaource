@@ -16,9 +16,8 @@ My JWT
   "session_state": "8c5fd9f9-72c0-4562-94eb-bd16ae4a873c",
   "acr": "1",
   "entitlements":[
-    "TLC.Boss",
-    "TLC.User",
-    "Day.User"
+    "Bolt.User",
+    "Bolt.Admin"
   ],
   "scope": "openid email profile",
   "email_verified": false,
