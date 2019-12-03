@@ -1,5 +1,6 @@
 My JWT
 
+```json
 
 {
   "jti": "8e1154b5-d4ce-4fe5-9430-e7277de7f652",
@@ -28,3 +29,4 @@ My JWT
   "family_name": "McCormic",
   "email": "ed@email.com"
 }
+```
