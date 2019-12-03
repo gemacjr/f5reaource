@@ -14,6 +14,8 @@ public class ResourceServerController {
     @GetMapping("/")
     public String index(@AuthenticationPrincipal Jwt jwt) {
         // How can I use the entitlements array for authorization?
+        // The output is -> Your entitlements: [ "TLC.Boss", "TLC.User", "Day.User" ]
+        
         return String.format("Your entitlements: %s", jwt.getClaims().get("entitlements"));
     }
 
