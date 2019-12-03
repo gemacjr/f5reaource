@@ -23,8 +23,8 @@ public class ResourceServerSecurityConfiguration extends WebSecurityConfigurerAd
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
                                 // Use an entitlement in hasAuthority
-                        .antMatchers(HttpMethod.GET, "/message/**").hasAuthority("")
-                        .antMatchers(HttpMethod.POST, "/message/**").hasAuthority("")
+                        .antMatchers(HttpMethod.GET, "/message/**").hasAuthority("TLC.User")
+                        .antMatchers(HttpMethod.POST, "/message/**").hasAuthority("Day.User")
                         .anyRequest().authenticated()
                         )
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
